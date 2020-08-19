@@ -1,0 +1,115 @@
+body {
+font-family: Verdana, sans-serif;
+color: #303030;
+font-size: 15px;
+letter-spacing: .3px;
+line-height: 18px;
+}
+
+#task {
+border: 2px solid #dadada;
+margin: 6px 0px;
+width: 400px;
+height: 20px;
+padding: 5px;
+}
+
+#addTaskBtn {
+    border: none;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #7c64ff;
+    padding: 5px;
+}
+
+.list {
+background-color: red;
+}
+
+
+.roster {
+    border: 2px solid #dadada;
+    margin: 6px 0px;
+    width: 400px;
+    height: 20px;
+}
+
+.active {
+background-color: green;
+}
+
+.delete {
+width: 20px;
+height: 20px;
+cursor: pointer;
+position: absolute;
+right: -35px;
+margin: -4px;
+color: #7c64ff;
+background-color: #dadada;
+border-radius: 50%;
+text-align: center;
+padding: 4px;
+border: 1px solid #dadada;
+}
+
+.delete:hover {
+    border: 1px solid #7c64ff;
+}
+
+ul {
+list-style-type: none; 
+counter-reset: num;
+margin: 0 0 0 35px;
+padding: 5px 0 5px 0;
+font-size: 18px;
+}
+
+ul li {
+position: relative;	
+margin: 0 0 0 0;
+padding: 5px;
+}
+
+ul li:before {
+content: counter(num);
+counter-increment: num;
+display: inline-block;
+position: absolute;
+top: 0px;
+left: -36px;
+width: 20px;
+height: 20px;
+color: #ef6780;
+background-color: #dadada;
+border-radius: 50%;
+text-align: center;
+padding: 4px;
+}
+
+.list {
+margin-bottom: 8px;
+padding:0;
+list-style: none;
+counter-reset: li;
+}
+
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+
+    color: -internal-light-dark(#ffffff00, white);
+
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}

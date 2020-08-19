@@ -42,7 +42,7 @@ function clearInput() {
 
 function onDoneTaskClick(e) {
 
-    if (e.target.classList.contains('list')){
+    if (e.target.classList.contains('roster')){
         e.target.classList.toggle('active');
     }
 

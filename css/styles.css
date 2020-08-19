@@ -24,16 +24,12 @@ padding: 5px;
     padding: 5px;
 }
 
-.list {
-background-color: red;
-}
-
-
 .roster {
     border: 2px solid #dadada;
     margin: 6px 0px;
     width: 400px;
     height: 20px;
+    background-color: red;
 }
 
 .active {
